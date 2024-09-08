@@ -1,0 +1,122 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Comic Sans" , cursive;
+    background-image: url("imagens/_4044c475-4d2d-44c1-a4c7-48e4105893c6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/*Estiliza os títulos h1*/
+h1 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    /*background: #45474B; Mudar a cor*/
+    background-color: rgba(243, 243, 243, 0.5);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}    
+/* Estiliza os inputs dentro das seções */
+section input {
+    font-family: cursive;
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+/* Estiliza os botões dentro das seções */
+section button {
+    font-family: "Comic Sans" cursive;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #dfd2d2; 
+    color: #000; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*Estiliza a caixa de resultados da pesquisa*/
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/*Estiliza cada item de resultado*/
+.itens-resultado {
+    background: #dfd2d2; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #add8ad;
+    color: #000;
+    text-align: center; /*Alinha o texto ao centro*/
+    padding: 0; /*Espaçamento interno*/
+    width: 100%; /*Largura total da página*/
+    position: absolute; /*Posiciona o rodapé*/
+    bottom: 0; /*Alinha ao fundo da página*/
+    font-size: 1rem; /*Tamanho da fonte*/
+}
+
+
+/*Responsividade para celulares*/
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /*Tamanho da fonte em telas pequenas*/
+        letter-spacing: 0.1rem; /*Espaçamento entre letras em telas pequenas*/
+    }
+
+    section input {
+        width: 17rem; /*Largura total dos inputs em telas pequenas*/
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /*Espaçamento interno do botão em telas menores.*/
+        font-size: 0.9rem; /*Tamanho da fonte do botão em telas pequenas.*/
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /*Largura da caixa de resultados em telas pequenas*/
+        height: 50vh; /*Altura da caixa de resultados em telas pequenas*/
+    }
+
+    .itens-resultado h2 {
+        font-size: 1.1rem; /*Tamanho da fonte dos títulos em telas pequenas*/
+    }
+
+    footer {
+        font-size: 0.9rem; /*Tamanho da fonte do rodapé em telas pequenas*/
+    }
+}
