@@ -1,4 +1,4 @@
-### ** Artista do Forró - Imersão Dev com Google Gemini**
+### **Artista do Forró - Imersão Dev com Google Gemini**
 
 **O que faz essa aplicação?**
 
